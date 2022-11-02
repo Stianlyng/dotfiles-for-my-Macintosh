@@ -1,130 +1,85 @@
+meh - n : open ~/Downloads
 
 
 # focus window
+meh - f1 : yabai -m window --focus next || yabai -m window --focus first
+meh - h : yabai -m window --focus west || yabai -m display --focus prev #|| yabai -m display --focus last
+meh - j : yabai -m window --focus south
+meh - k : yabai -m window --focus north
+meh - l : yabai -m window --focus east || yabai -m display --focus next #|| yabai -m display --focus first
+#meh - z : yabai -m window --focus stack.prev
+#meh - c : yabai -m window --focus stack.next
 
-# focus window in direction of focused window (options: north, east, south, west)
-meh - w : yabai -m window --focus north
-meh - a : yabai -m window --focus west
-meh - s : yabai -m window --focus south
-meh - d : yabai -m window --focus east
+# swap window
+meh - f4 : yabai -m window --swap next || yabai -m window --swap first 
+hyper - h : yabai -m window --swap west || ( yabai -m window --display prev && yabai -m display --focus prev )
+hyper - j : yabai -m window --swap south
+hyper - k : yabai -m window --swap north 
+hyper - l : yabai -m window --swap east ||  ( yabai -m window --display next && yabai -m display --focus next )
+# move window
+#shift + cmd - h : yabai -m window --warp west
+#shift + cmd - j : yabai -m window --warp south
+#shift + cmd - k : yabai -m window --warp north
+#shift + cmd - l : yabai -m window --warp east
 
-# toggle window split type
-meh - e : yabai -m window --toggle split
+# fast focus desktop
+#meh - o : yabai -m space --focus recent
+meh - u : yabai -m space --focus prev 
+meh - i : yabai -m space --focus next 
+meh - f6 : yabai -m space --focus next || yabai -m space --focus first
 
+# move window to space
+hyper - u : yabai -m window --space prev && yabai -m space --focus prev
+hyper - i : yabai -m window --space next && yabai -m space --focus next
+
+# focus monitor
+#ctrl + alt - x  : yabai -m display --focus recent
+meh - y  : yabai -m display --focus prev
+meh - o  : yabai -m display --focus next
 
 # balance size of windows
 meh - b : yabai -m space --balance
 
-# focus window that was previously focused
-#meh - tab :yabai -m window --focus recent
+# Create space on the active display
+meh - t : yabai -m space --create
 
-# focus window loop
-meh - tab :yabai -m window --focus next || yabai -m window --focus first
+# destroy desktop
+meh - w : yabai -m space recent --destroy
 
-# focus spaces
-# loop
-hyper - tab :yabai -m space --focus next || yabai -m space --focus first
-meh - h :yabai -m space --focus prev
-meh - l :yabai -m space --focus next
-############  Shifted Layer #############
+# rotate tree
+meh - r : yabai -m space --rotate 90
 
+# toggle window split type
+meh - e : yabai -m window --toggle split
 
-# swap window position and size with window in direction of focused window
-#   (options: north, east, south, west)
-hyper - w : yabai -m window --swap north
-hyper - a : yabai -m window --swap west
-hyper - s : yabai -m window --swap south
-hyper - d : yabai -m window --swap east
-
-# focus previous or next window in window tree (options: prev, next)
-#meh - j : yabai -m window --focus next
-#meh - k : yabai -m window --focus prev
-
-
-# focus window that was previously focused
-#meh - p :yabai -m window --swap recent
-
-############  Insertion Layer #############
-
-# set insertion point in focused container
-# Activated by pressing I, in meh layer on Planck
-#meh - i : yabai -m window --insert stack
-meh - f1 : yabai -m window --insert north
-meh - f2 : yabai -m window --insert west
-meh - f3 : yabai -m window --insert south
-meh - f4 : yabai -m window --insert east
-
-# fast focus desktop
-# cmd + alt - x : yabai -m space --focus recent
-#meh - tab : yabai -m space --focus recent 
-#hyper - r : yabai -m space --focus 1
-#hyper - t : yabai -m space --focus 2
-#hyper - y : yabai -m space --focus 3
-#hyper - u : yabai -m space --focus 4
-
-# make floating window fill screen
-# shift + alt - up     : yabai -m window --grid 1:1:0:0:1:1
-
-# make floating window fill left-half of screen
-# shift + alt - left   : yabai -m window --grid 1:2:0:0:1:1
-
-# create desktop and follow focus - uses jq for parsing json (brew install jq)
-meh - n : yabai -m space --create && \
-                 index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
-                 yabai -m space --focus "${index}"
-
-# Destroy desktop
-meh - x : yabai -m space --focus prev && yabai -m space recent --destroy
-
-# create desktop, move window and follow focus - uses jq for parsing json (brew install jq)
-meh - f5 : yabai -m space --create && \
-                   index="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')" && \
-                   yabai -m window --space "${index}" && \
-                   yabai -m space --focus "${index}"
-
-
-
-
-# send window to desktop and follow focus
-# send window to desktop and follow focus
-meh - q : yabai -m window --space recent && yabai -m space --focus recent
-meh - j : yabai -m window --space prev && yabai -m space --focus prev
-meh - k : yabai -m window --space next && yabai -m space --focus next
-meh - f6 : yabai -m window --space  1; yabai -m space --focus 1
-meh - f7 : yabai -m window --space  2; yabai -m space --focus 2
-meh - f8 : yabai -m window --space  3; yabai -m space --focus 3
-meh - f9 : yabai -m window --space  4; yabai -m space --focus 4
-
-# focus monitor
-# ctrl + alt - z  : yabai -m display --focus prev
-# ctrl + alt - 3  : yabai -m display --focus 3
-
-# send window to monitor and follow focus
-# ctrl + cmd - c  : yabai -m window --display next; yabai -m display --focus next
-# ctrl + cmd - 1  : yabai -m window --display 1; yabai -m display --focus 1
-
-# move floating window
-# shift + ctrl - a : yabai -m window --move rel:-20:0
-# shift + ctrl - s : yabai -m window --move rel:0:20
-
-# increase window size
-# shift + alt - a : yabai -m window --resize left:-20:0
-# shift + alt - w : yabai -m window --resize top:0:-20
-
-# decrease window size
-# shift + cmd - s : yabai -m window --resize bottom:0:-20
-# shift + cmd - w : yabai -m window --resize top:0:20
-
-
-
-# toggle window zoom
-alt - d : yabai -m window --toggle zoom-parent
-alt - f : yabai -m window --toggle zoom-fullscreen
-
-
-
-# float / unfloat window and center on screen
+# float / unfloat window and restore position
+# alt - t : yabai -m window --toggle float && /tmp/yabai-restore/$(yabai -m query --windows --window | jq -re '.id').restore 2>/dev/null || true
 meh - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
-# toggle sticky(+float), topmost, picture-in-picture
-hyper - f: yabai -m window --toggle sticky --toggle topmost --toggle pip
+# toggle sticky (show on all spaces)
+meh - s : yabai -m window --toggle sticky
+# toggle topmost (keep above other windows)
+meh - a : yabai -m window --toggle topmost
+
+# toggle picture-in-picture
+#meh - h : yabai -m window --toggle border --toggle pip
+
+
+# focus window under cursor  
+#meh - space : yabai -m window --focus mouse
+
+# swap with window under cursor
+#hyper - space : yabai -m window --swap mouse
+
+# increase window size
+#hyper - n : yabai -m window --resize left:-40:0 
+#hyper - e : yabai -m window --resize bottom:0:40
+#hyper - o : yabai -m window --resize top:0:-40
+#hyper - i :yabai -m window --resize right:40:0
+#
+## decrease window size
+#hyper - f5 : yabai -m window --resize left:40:0
+#hyper - u : yabai -m window --resize bottom:0:-40
+#hyper - p : yabai -m window --resize top:0:40
+#hyper - f : yabai -m window --resize right:-40:0
+

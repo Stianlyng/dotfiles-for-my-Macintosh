@@ -1,0 +1,1 @@
+{"title":"left ctrl → Meh (⌃⌥⇧) (Caps Lock if alone)","rules":[{"description":"left ctrl → Meh Key (⌃⌥⇧) (Caps Lock if alone)","manipulators":[{"from":{"key_code":"left_control"},"to":[{"key_code":"left_shift","modifiers":["left_control","left_option"]}],"type":"basic"}]}]}
