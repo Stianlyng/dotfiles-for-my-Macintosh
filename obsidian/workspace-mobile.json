@@ -1,0 +1,129 @@
+{
+  "main": {
+    "id": "ccc9fe5fed36e1d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "45c1988805f0e92c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5062a872692b37b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/ELI5 - Operativsystemer.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7cd7b5d50a9ff2f2",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "e4421e7b290d94ab",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "f6142964435ad86e",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "8e2c879a8e76ef20",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "183fb5291954b511",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "0d7e4edb6229fa35",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "fc169cca15df54ed",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "notes/ELI5 - Operativsystemer.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "1ab8dcb0fc271b8b",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "notes/ELI5 - Operativsystemer.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "694ce9825df1cc52",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "notes/ELI5 - Operativsystemer.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "5062a872692b37b1",
+  "lastOpenFiles": [
+    "notes/Operativsystemer - IDATT2202.md"
+  ]
+}

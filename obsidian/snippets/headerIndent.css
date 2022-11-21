@@ -1,0 +1,38 @@
+/* ---------- H1 ---------- */
+:root {
+    --h1-indent: 0.0em;
+    --h2-indent: 1.0em;
+    --h3-indent: 2.0em;
+    --h4-indent: 3.0em;
+    --h5-indent: 4.0em;
+    --h6-indent: 5.0em;
+}
+
+
+.markdown-rendered li h1, .markdown-rendered li h2, .markdown-rendered li h3, .markdown-rendered li h4, .markdown-rendered li h5 {
+    margin-bottom: 15px;
+}
+
+
+
+
+/*
+.list-bullet {
+    visibility: visible;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.el-ul h3 {
+    padding-bottom: 15px !important;
+  }
+
+.markdown-rendered li h1, .markdown-rendered li h2, .markdown-rendered li h3, .markdown-rendered li h4, .markdown-rendered li h5 {
+    margin-top: none !important;
+    margin-bottom: none !important;
+}  
+*/

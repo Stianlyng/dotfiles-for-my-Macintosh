@@ -50,14 +50,17 @@ meh - w : yabai -m space recent --destroy
 meh - r : yabai -m space --rotate 90
 
 # toggle window split type
-meh - e : yabai -m window --toggle split
+meh - s : yabai -m window --toggle split
+
+# toggle whether the focused window should have a border
+meh - x :yabai -m window --toggle border
 
 # float / unfloat window and restore position
 # alt - t : yabai -m window --toggle float && /tmp/yabai-restore/$(yabai -m query --windows --window | jq -re '.id').restore 2>/dev/null || true
-meh - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
+meh - space : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # toggle sticky (show on all spaces)
-meh - s : yabai -m window --toggle sticky
+#meh - s : yabai -m window --toggle sticky
 # toggle topmost (keep above other windows)
 meh - a : yabai -m window --toggle topmost
 
@@ -83,3 +86,8 @@ meh - a : yabai -m window --toggle topmost
 #hyper - p : yabai -m window --resize top:0:40
 #hyper - f : yabai -m window --resize right:-40:0
 
+# create a stack
+meh - d : yabai -m window --insert stack
+meh - c : yabai -m window --focus stack.next || yabai -m window --focus stack.first
+# stack target_window_sel onto source_window_sel
+meh - x :yabai -m window --focus --stack stack.recent

@@ -1,0 +1,231 @@
+{
+  "main": {
+    "id": "dd5b1edd449bc78a",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc7f604a21fe0156",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea3830697bd3082d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/ELI5 - Operativsystemer.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "e6a3dc07f31fb7a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/Assorted questions - IDATT2202.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "dc16874dbbd87958",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bbeb302b9b4384d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/eli5 os DUMP.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c6880652c18b0e6e",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa41dd03ae847f18",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a802bd1c3af1430d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3c1924189e032706",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#flashcards",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "42e887c49c4b40c9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 270.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "f76d161788451666",
+    "type": "split",
+    "children": [
+      {
+        "id": "7edbc750bf0b854e",
+        "type": "tabs",
+        "dimension": 35.47459252157239,
+        "children": [
+          {
+            "id": "1f05dfb12e4843c1",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "notes/eli5 os DUMP.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.6653705859871827,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d174aaedbb3df33d",
+        "type": "tabs",
+        "dimension": 64.52540747842761,
+        "children": [
+          {
+            "id": "68907a33cb01719f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/eli5 os DUMP.md",
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cc22fa889af251d1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "notes/eli5 os DUMP.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f91b5d1406d00a6e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "44fc28a82c6fe870",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/eli5 os DUMP.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 445.5,
+    "collapsed": true
+  },
+  "active": "bbeb302b9b4384d7",
+  "lastOpenFiles": [
+    "notes/eli5 os DUMP.md",
+    "notes/ELI5 - Operativsystemer.md",
+    "notes/Assorted questions - IDATT2202.md",
+    "notes/flashcards.md",
+    "notes/Operativsystemer - IDATT2202.md",
+    "notes/48 laws of power - Robert Greene.md",
+    "notes/QUIZ 1 - IDATT2202.md",
+    "notes/QUIZ 2 - IDATT2202 - Process Abstraction.md",
+    "journals/November 20th 2022.md",
+    "notes/misderected writes.md"
+  ]
+}
