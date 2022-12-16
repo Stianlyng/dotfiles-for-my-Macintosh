@@ -1,1 +1,0 @@
-{"title":"Caps Lock → Meh (⌃⌥⇧) (ESC if alone)","rules":[{"description":"Caps Lock → Meh Key (⌃⌥⇧) (Caps Lock if alone)","manipulators":[{"from":{"key_code":"caps_lock","modifiers":{"optional":["caps_lock"]}},"to":[{"key_code":"left_shift","modifiers":["left_control","left_option","left_shift"]}],"to_if_alone":[{"key_code":"escape"}],"type":"basic"}]}]}
